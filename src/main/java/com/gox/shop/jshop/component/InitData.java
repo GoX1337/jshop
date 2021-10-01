@@ -16,6 +16,7 @@ public class InitData implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
+        System.out.println("INIT DATA");
         Product p1 = new Product("Jambon", 5, 5000);
         Product p2 = new Product("Paté", 6, 3500);
         Product p3 = new Product("Saucisse", 2, 7500);
