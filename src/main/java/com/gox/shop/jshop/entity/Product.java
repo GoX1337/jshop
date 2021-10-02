@@ -23,13 +23,13 @@ public class Product {
 
     private float price;
 
-    private int quantity;
+    private int stockQuantity;
 
     private LocalDateTime creationDate = LocalDateTime.now();
 
-    public Product(String name, float price, int quantity) {
+    public Product(String name, float price, int stockQuantity) {
         this.name = name;
         this.price = price;
-        this.quantity = quantity;
+        this.stockQuantity = stockQuantity;
     }
 }

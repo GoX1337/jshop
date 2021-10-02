@@ -25,7 +25,7 @@ class ProductAssemblerTest {
         Product product = new Product(1L, "Jambon", 5, 5000, now);
         ProductDto productDto = productAssembler.bo2dto(product);
         assertEquals(1L, productDto.getId());
-        assertEquals(5000, productDto.getQuantity());
+        assertEquals(5000, productDto.getStockQuantity());
         assertEquals("Jambon", productDto.getName());
         assertEquals(5, productDto.getPrice());
         assertEquals(now, productDto.getCreationDate());

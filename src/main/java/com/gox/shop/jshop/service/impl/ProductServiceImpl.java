@@ -4,6 +4,7 @@ import com.gox.shop.jshop.assembler.ProductAssembler;
 import com.gox.shop.jshop.dto.ProductDto;
 import com.gox.shop.jshop.repository.ProductRepository;
 import com.gox.shop.jshop.service.ProductService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -11,15 +12,11 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
+@RequiredArgsConstructor
 public class ProductServiceImpl implements ProductService {
 
     private final ProductRepository productRepository;
     private final ProductAssembler productAssembler;
-
-    public ProductServiceImpl(ProductRepository productRepository, ProductAssembler productAssembler) {
-        this.productRepository = productRepository;
-        this.productAssembler = productAssembler;
-    }
 
     @Override
     public List<ProductDto> findAllProduct() {
