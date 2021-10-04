@@ -12,6 +12,7 @@ public class ProductAssembler {
         productDto.setId(product.getId());
         productDto.setName(product.getName());
         productDto.setPrice(product.getPrice());
+        productDto.setStockQuantity(product.getStockQuantity());
         productDto.setCreationDate(product.getCreationDate());
         return productDto;
     }
